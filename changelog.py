@@ -9,7 +9,17 @@ class ChangeLog( object ):
 	[ ] process templates to output path
 	"""
 	def __init__( self ):
+		self.dataDict = {}
+
+	def setTemplatePath( self, path ):
 		pass
+
+	def setOutputPath( self, path ):
+		pass
+
+	def thing( self ):
+		pass
+
 
 if __name__ == "__main__":
 	import os, sys
@@ -20,4 +30,5 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser(
         description="Change logs based on templates.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+
 
